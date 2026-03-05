@@ -1,13 +1,41 @@
 body {
+    margin: 0;
+    padding 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
 
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 5px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
+    width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #1F2937;
-    color: #F9FAF8;
 }
 
 .right-links {
@@ -18,20 +46,104 @@ body {
     margin: 16px;
 }
 
-.intro {
-    background-color: #1F2937;
-    color: #F9FAF8;
+.hero {
+    width: 900px;
     display: flex;
     flex-direction: row;
 }
 
+.hero-left, .hero-right {
+    flex-grow: 1;
+}
 
+.button-hero {
+    border-radius: 4px;
+    border-style: none;
+    background-color: #3882F6;
+    color: white;
+    width: 80px;
+    height: 20px;
+}
 
-.quote {
+.button-action {
+    border-radius: 4px;
+    background-color: #3882F6;
+    color: white;
+    width: 80px;
+    height: 20px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.hero-main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.random-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.random {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.random-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row§;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 4px;
+}
+
+.quote-container {
     background-color: #E5E7EB;
     color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    width: 900px;
     font-weight: 300;
     font-size: 36px;
+}
+
+.p-quote {
+    margin: 64px 64px 0 64px;
+    font-style: italic;
+}
+
+.p-author {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0px 64px 64px 64px;
 }
 
 .action {
