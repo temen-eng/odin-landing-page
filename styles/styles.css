@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding 0;
+    padding: 0;
     display: flex;
     justify-content:space-evenly;
     flex-direction: column;
@@ -19,7 +19,7 @@ ul {
 }
 
 li {
-  margin: 5px;
+  margin: 0;
 }
 
 .header-container {
@@ -38,22 +38,43 @@ li {
     justify-content: space-between;
 }
 
+.p-header {
+    font-weight: bold;
+}
+
 .right-links {
     display: flex;
     flex-direction: row;
     gap: 16px;
     padding: 0px;
-    margin: 16px;
+    margin-top: 16px;
 }
 
 .hero {
     width: 900px;
     display: flex;
     flex-direction: row;
+    gap: 16px;
+    padding: 36px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .hero-left, .hero-right {
-    flex-grow: 1;
+    flex: 1;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-right {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-hero {
@@ -80,11 +101,21 @@ li {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    margin: 0;
 }
 
 .hero-secondary {
     font-size: 18px;
     color: #E5E7EB;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.img-hero {
+    width: 400px;
+    height: 150px;
+    border-style: solid;
+    border-color: lightblue;
 }
 
 .random-container {
@@ -183,7 +214,7 @@ li {
     justify-content:space-evenly;
     background-color: #3882F6;
     color: #F9FAF8;
-    width: 900px;
+    width: 840px;
     margin-top: 60px;
     margin-bottom: 60px;
     padding: 30px;
